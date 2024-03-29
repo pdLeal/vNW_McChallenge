@@ -8,10 +8,27 @@ const urls = [Burguer, Fries, IceCream];
 
 function Hero() {
     const [index, setIndex] = useState(0);
+    
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex(prevIndex => {
+                if(prevIndex === 2) {
+                    return 0;
+                } else {
+                    return prevIndex + 1;
+                }
+            });
+        }, 3000);
+        
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
 
     return (
         <S.Styled_Hero>
-            <S.Container className='gap'>
+            <S.Container className='gap fig-gap'>
                 <S.Figure>
                     {urls.map(url => (
                         <img

@@ -7,6 +7,10 @@ export const Styled_Hero = styled.section`
         .gap {
             margin-bottom: 48px;
         }
+
+        .fig-gap {
+            column-gap: 10vw;
+        }
 `;
 
 export const Container = styled.div`
@@ -35,8 +39,8 @@ export const Figure = styled.figure`
 `;
 
 export const H1 = styled.h1`
-    font-size: clamp(1rem, 3vw + 0.5rem, 2rem);
-    max-width: 345px;
+    font-size: clamp(1rem, 3vw + 0.5rem, 2.5rem);
+    max-width: 375px;
         
         span {
             color: #DB0007;
