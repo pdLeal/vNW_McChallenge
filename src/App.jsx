@@ -1,10 +1,14 @@
 import React from "react";
-import Header from "./components/Header";
 import { createGlobalStyle } from "styled-components";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 html {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 *, *::before, *::after {
@@ -34,6 +38,7 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
+      <Main />
     </>
   )
 }
