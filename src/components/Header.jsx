@@ -54,10 +54,10 @@ const Link = styled.a`
 
     &:nth-child(2) { // Selects the link that's a second child
       font-weight: bold;
-      background-color: #FFC72C;
+      background-color: var(--main-color);
 
         &:hover {
-          background-color: #fcb900;
+          background-color: var(--second-color);
         }
 
         &:active {

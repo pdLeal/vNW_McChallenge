@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Styled_Hero = styled.section`
     padding: var(--size-4x);
-    background-color: #FEB706;
+    background-color: var(--main-color);
 
         .gap {
             margin-bottom: 48px;
@@ -34,7 +34,7 @@ export const Figure = styled.figure`
             aspect-ratio: 1 / 1;
             flex-shrink: 0;
             flex-grow: 0;
-            transition: translate 300ms ease-in-out;
+            transition: ${window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'translate 300ms ease-in-out' : 'none'};
         }
 `;
 

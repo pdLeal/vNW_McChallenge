@@ -29,6 +29,9 @@ img {
   --size-2x: 16px;
   --size-3x: 24px;
   --size-4x: 32px;
+
+  --main-color: #FFC72C;
+  --second-color: #FEB706;
 }
 `;
 
