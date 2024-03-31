@@ -2,6 +2,7 @@ import React from "react";
 import { createGlobalStyle } from "styled-components";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
@@ -43,6 +44,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Main />
+      <Footer />
     </>
   )
 }
