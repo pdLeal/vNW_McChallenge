@@ -34,7 +34,7 @@ export const Figure = styled.figure`
             aspect-ratio: 1 / 1;
             flex-shrink: 0;
             flex-grow: 0;
-            transition: ${window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'translate 300ms ease-in-out' : 'none'};
+            transition: ${window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'none' : 'translate 300ms ease-in-out'};
         }
 `;
 

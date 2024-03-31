@@ -32,6 +32,7 @@ img {
 
   --main-color: #FFC72C;
   --second-color: #FEB706;
+  --btn-color: #FFBC0D;
 }
 `;
 

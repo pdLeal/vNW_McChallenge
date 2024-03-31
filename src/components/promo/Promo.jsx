@@ -1,12 +1,14 @@
 import React from 'react';
 import * as S from './Promo_Styles'
 import McSofa from '../../imgs/mequiNoSofa.png';
+import Lojas from '../../imgs/Restaurantes_Participantes.png';
+import Banner from '../../imgs/banner_Rodapee.png';
 
-function Card() {
+function Card({featuredImg, title}) {
     return (
         <S.Styled_Card>
-            <img src={McSofa} alt="" />
-            <h3>Que tal um mequi?</h3>
+            <img src={featuredImg} alt="" />
+            <h3>{title}</h3>
             <button>Clique aqui</button>
         </S.Styled_Card>
     )
@@ -14,14 +16,14 @@ function Card() {
 
 function Promo() {
   return (
-    <section>
-        <h2>Promoção</h2>
+    <S.Promo_Section>
+        <S.H2>Promoção</S.H2>
         <S.Grid>
-            <Card />
-            <Card />
-            <Card />
+            <Card featuredImg={McSofa} title='Que tal um #MéquiNoSofá?'  />
+            <Card featuredImg={Lojas} title='Venha conhecer nossa nova loja!' />
+            <Card featuredImg={Banner} title='Confira as medidas que o Méqui adotou!' />
         </S.Grid>
-    </section>
+    </S.Promo_Section>
   )
 }
 

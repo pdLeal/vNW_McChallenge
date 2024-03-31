@@ -48,7 +48,7 @@ const Link = styled.a`
         }
 
         &:active {
-          font-weight: bold;
+          background-color: #baa364;
         }
     }
 
